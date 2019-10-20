@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Cascade</title>
+    </head>
+    <body>
+        <loop-cascade class="loop-cascade">
+            
+        </loop-cascade>
+        <template class="cascade" data-type="loop" data-name="loop-cascade" data-coll="article" data-child="child-cascade">
+        </template>
+        <template class="cascade" data-type="child" data-name="child-cascade">
+            <article>
+                <h5><slot name="title"></slot></h5>
+                <p><slot name="content"></slot></p>
+            </article>
+        </template>
+        <script src="index.js"></script>
+        <script src="loki.min.js"></script>
+    </body>
+</html>
